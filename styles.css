@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><text x='0' y='20' font-size='20'>❤️</text></svg>");
+    background-repeat: repeat;
+    background-size: 30px 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #ffe6f0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    color: black;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#noButton {
+    position: relative;
+}
+
+.alert {
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Halaman 1: Masukkan Nama -->
+    <div id="page1" class="center">
+        <h2>Enter your name</h2>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <br>
+        <button onclick="nextPage(1)">Next</button>
+    </div>
+
+    <!-- Halaman 2: Masukkan Umur -->
+    <div id="page2" class="center hidden">
+        <h2>Your age</h2>
+        <input type="number" id="ageInput" placeholder="Your age">
+        <br>
+        <button onclick="nextPage(2)">Next</button>
+    </div>
+
+    <!-- Halaman 3: Verifikasi Nama -->
+    <div id="page3" class="center hidden">
+        <h2>Is that really your name?</h2>
+        <button onclick="verifyName(true)">Yes</button>
+        <button onclick="verifyName(false)">Back</button>
+    </div>
+
+    <!-- Halaman 4: Pertanyaan "Will you be my lover?" -->
+    <div id="page4" class="center hidden">
+        <h2>Will you be my lover?</h2>
+        <button id="noButton" onclick="moveNo()">No</button>
+        <button onclick="nextPage(4)">Yes</button>
+    </div>
+
+    <!-- Halaman 5: Status Hubungan -->
+    <div id="page5" class="center hidden">
+        <h2>Yeayyyy now we are officially a couple!</h2>
+        <button id="exitButton" onclick="exit()">I love you, [name]</button>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="./script.js"></script>
+</body>
+</html>
